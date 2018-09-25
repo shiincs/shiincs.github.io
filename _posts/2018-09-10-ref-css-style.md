@@ -221,7 +221,7 @@ comments: true
       background: lime;
     }
   }
-  
+   c
   /* 랩탑 및 와이드 스크린 디바이스 */
   @media screen and (min-width: 1025px) {
     body {

@@ -242,4 +242,81 @@ comments: true
   }
   ```
 
-c
+- **반응형 웹 템플릿 예제**
+
+  ```css
+  *, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+  }
+  
+  /* 공통 코드 */
+  .header {
+    background-color: skyblue;
+    width: 100%;
+  }
+  .main {
+    background-color: orange;
+    width: 100%;
+  }
+  
+  /* Desktop+ Size */
+  @media screen and (min-width: 1025px) {
+    .main-container {
+      width: 1024px;
+      background-color: yellow;
+      margin: 0 auto;
+    }
+    .list {
+      list-style: none;
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      width: 100%;
+    }
+    .list-item {
+      width: calc(25% - 10px);
+      border: 1px solid black;
+    }
+  }
+  
+  /* Tablet Size */
+  @media screen and (max-width: 1024px) {
+    .main-container {
+      width: 100%;
+      background-color: yellow;
+    }
+    .list {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      width: 100%;
+    }
+    .list-item {
+      width: calc(100% / 3 - 10px);
+      border: 1px solid black;
+    }
+  }
+  
+  /* Mobile Size */
+  @media screen and (max-width: 480px) {
+    .main-container {
+      width: 100%;
+      background-color: yellow;
+    }
+    .list {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+    }
+    .list-item {
+      width: 100%;
+      border: 1px solid black;
+    }
+  }
+  ```
+

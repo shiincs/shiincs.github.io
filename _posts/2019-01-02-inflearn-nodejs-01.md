@@ -1,6 +1,6 @@
 ---
 title: "[Node.js] 노드 시작하기"
-date: 2019-01-02 20:00:00 +0900
+date: 2019-01-02 10:00:00 +0900
 tags:
   - Node.js
   - Inflearn
